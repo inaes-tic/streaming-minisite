@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Player HTML5</title>
+
+<script src="http://player.aovivonaweb.tv/jwplayer/jwplayer.js"></script> 
+<script type="text/javascript">jwplayer.key="ZzHKxvGMLlvJ6hUQlRemjxpx9/6/0zGTHfHSvw==";</script>
+</head>
+<body>
+<h1>Player WEBM + HLS + RTMP </h1>
+<div id="player">
+<div id='myElement'><a href="rtsp://stream.aovivonaweb.tv:1935/liveorigin/load">Você está usando um aparelho Android: Clique aqui para assistir a transmissão</a></div>
+
+<script>
+    jwplayer("myElement").setup({
+      playlist: [{
+        image: "",
+        sources: [{
+          file: "rtmp://stream.aovivonaweb.tv/redirect/origin.stream"
+        },{
+	  file: "http://54.232.81.194/opcode.webm"
+        },{
+          file: "http://stream.aovivonaweb.tv/liveorigin/load/playlist.m3u8"
+        }]
+      }],
+      	width: "640",
+        height: "360",
+	stretching: "bestfit",
+	autoplay: "true",
+	controlbar: "bottom",
+        primary: "html5",
+	aspectratio: '16:9',
+	fallback: true
+    });
+</script>
+
+</div>
+</body>
+</html>
