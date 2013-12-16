@@ -21,12 +21,24 @@
         span#player_controlbar_duration, div.jwoverlay, span.jwslider {
             display: none;
         }
+        div.copete {
+            font-family: sans;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 9px;
+        }
+        span.rojo {
+            color: red;
+        }
     </style>
 </head>
 <body>
     <div id="container">
         <div id="player">
             <a href="rtsp://stream.aovivonaweb.tv:1935/liveorigin/load">Usted está utilizando un dispositivo Android: Cliquee aquí para acceder a la transmisión</a>
+        </div>
+        <div class="copete">
+            <span class="rojo">EN VIVO</span> <a target="_top" href="http://www.defensadelpublico.gob.ar/es/inauguracion-casa-defensoria-del-publico">Casa Defensoría del Público</a>
         </div>
         <script>
             jwplayer("player").setup({
@@ -41,7 +53,7 @@
                     }]
                 }],
                 width: "260",
-                height: "180",
+                height: "147",
                 stretching: "bestfit",
                 autostart: true,
                 controlbar: "bottom",
