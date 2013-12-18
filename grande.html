@@ -9,18 +9,18 @@
         body {
             margin: 0;
             padding: 0;
-	    background-color: black;
+	background-color: black;
         }
         div#container {
-            width: 660px;
-            height: 372px;
+            width: 910px;
+            height: 512px;
             /*border: 1px solid red;*/
-position:absolute; left:50%; margin-left: -330px;top:50%;margin-top:-186px;
+position:absolute; left:50%; margin-left: -455px;top:50%;margin-top:-256px;
         }
         div#player {
             margin: 0px auto;
         }
-        span#player_controlbar_duration, div.jwoverlay, span.jwslider {
+        span#player_controlbar_duration, span.jwslider {
             display: none;
         }
     </style>
@@ -37,13 +37,18 @@ position:absolute; left:50%; margin-left: -330px;top:50%;margin-top:-186px;
                     sources: [{
                         file: "rtmp://stream.aovivonaweb.tv/redirect/origin.stream"
                     },{
-                        file: "http://54.232.81.194/opcode.webm"
+                        file: "http://54.232.81.194/opcode.webm", label: "720"
                     },{
+                   /*     file: "http://54.232.81.194/opcode-low.webm", label: "360"
+                    },{
+                        file: "http://54.232.81.194/opcode-very-low.webm", label: "240"
+                    
+		    },{ */
                         file: "http://stream.aovivonaweb.tv/liveorigin/load/playlist.m3u8"
                     }]
                 }],
-                width: "660",
-                height: "372",
+                width: "910",
+                height: "512",
                 stretching: "bestfit",
                 autostart: true,
                 controlbar: "bottom",

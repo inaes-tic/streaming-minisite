@@ -18,7 +18,7 @@
         div#player {
             margin: 0px auto;
         }
-        span#player_controlbar_duration, div.jwoverlay, span.jwslider {
+        span#player_controlbar_duration, span.jwslider {
             display: none;
         }
         div.copete {
@@ -47,8 +47,12 @@
                     sources: [{
                         file: "rtmp://stream.aovivonaweb.tv/redirect/origin.stream"
                     },{
-                        file: "http://54.232.81.194/opcode.webm"
-                    },{
+                        file: "http://54.232.81.194/opcode.webm", label: "720"
+		    },{
+		/*	file: "http://54.232.81.194/opcode-low.webm", label: "360"
+       		    },{
+			file: "http://54.232.81.194/opcode-very-low.webm", label: "240"
+                    },{ */
                         file: "http://stream.aovivonaweb.tv/liveorigin/load/playlist.m3u8"
                     }]
                 }],
