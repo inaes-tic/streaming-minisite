@@ -27,10 +27,65 @@
         span#player_controlbar_duration, span.jwslider {
             display: none;
         }
+        div#mosca {
+        position: absolute;
+        float: left;
+        display: block;
+        z-index: 1;
+        right: 0px;
+
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 20000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: spin;
+        -moz-animation-duration: 20000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: spin;
+        -ms-animation-duration: 20000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+
+        animation-name: spin;
+        animation-duration: 20000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        }
+        @-moz-keyframes spin {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
+        }
+        @-webkit-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+        }
+        }
+
+        @-moz-keyframes spin {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
+        }
+        @-webkit-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+        }
+
     </style>
 </head>
 <body>
-    <div id="container">
+  <div id="container">
+    <div id="mosca">
+      <img src="img/defe.png" width="100px"/>
+    </div>
         <div id="player">
             <a href="rtsp://stream.aovivonaweb.tv:1935/liveorigin/load">Usted está utilizando un dispositivo Android: Cliquee aquí para acceder a la transmisión</a>
         </div>
