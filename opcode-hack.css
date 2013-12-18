@@ -26,23 +26,52 @@ div#mosca {
     z-index: 1;
     top:   20px;
     right: 50px;
+}
 
-
-    -webkit-animation-name: spin;
+div.animate-20000 {
     -webkit-animation-duration: 20000ms;
+    -moz-animation-duration: 20000ms;
+    -ms-animation-duration: 20000ms;
+    animation-duration: 20000ms;
+}
+
+div.animate-10000 {
+    -webkit-animation-duration: 10000ms;
+    -moz-animation-duration: 10000ms;
+    -ms-animation-duration: 10000ms;
+    animation-duration: 10000ms;
+}
+
+div.animate-spin {
+    -webkit-animation-name: spin;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spin;
-    -moz-animation-duration: 20000ms;
+
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spin;
-    -ms-animation-duration: 20000ms;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 
     animation-name: spin;
-    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+div.animate-spinY {
+    -webkit-animation-name: spinY;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinY;
+
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinY;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spinY;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -58,5 +87,18 @@ div#mosca {
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes spinY {
+     from { -moz-transform: rotateY(0deg); }
+     to { -moz-transform: rotateY(360deg); }
+}
+@-webkit-keyframes spinY {
+    from { -webkit-transform: rotateY(0deg); }
+    to { -webkit-transform: rotateY(360deg); }
+}
+@keyframes spinY {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
 }
 
