@@ -1,0 +1,6 @@
+MBC Streaming Minisite.
+
+this is the minisite we load on client websites for streaming events.
+it uses JWPlayer and a few js/css magical tricks to do the job.
+
+idealy it should evolve into merging with mbc-ettiquette
